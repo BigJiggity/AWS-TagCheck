@@ -24,8 +24,8 @@ class AWS(object):
         :returns ec2 object
         """
         return (boto.ec2.connect_to_region(self.region,
-                 aws_access_key_id = 'AKIAIAWHGR3NN2T6C5PQ',
-                 aws_secret_access_key = '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'))
+                 aws_access_key_id = 'xxxxxxxxxx',
+                 aws_secret_access_key = 'xxxxxxxxx'))
 
 """ Helper functions """
 def check_data(item, values):
