@@ -1,0 +1,34 @@
+# PyLint configuration file for the project pytools.
+# USAGE: pylint --rcfile pylintrc <filename> or <foldername>  --  NOTE: Folder must have __init__.py for pylint to work.
+
+[MASTER]
+ignore=build,dist,aws
+
+[MESSAGES CONTROL]
+# Disable the following PyLint messages:
+# logging-format-interpolation - Use % formatting in logging functions and pass the % parameters as arguments
+# import-error - Unable to import %s
+# old-style-class - http://pylint-messages.wikidot.com/messages:c1001
+disable=logging-format-interpolation, import-error, old-style-class
+
+[REPORTS]
+
+# Set the output format. Available formats are text, parseable, colorized and
+# html
+output-format=colorized
+
+# Tells whether to display a full report or only the messages
+reports=yes
+
+[MISCELLANEOUS]
+
+# List of note tags to take in consideration, separated by a comma.
+# FIXME -- something which needs fixing
+# TODO  -- future plan
+notes=FIXME,TODO
+
+[FORMAT]
+
+# Maximum number of characters on a single line.
+# We all have awesome monitors now...let's get away from 100 char limit.
+max-line-length=120

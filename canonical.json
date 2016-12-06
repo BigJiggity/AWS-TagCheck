@@ -1,0 +1,25 @@
+{"Environment":
+  [
+    "Prod",
+    "QA",
+    "Dev",
+    "Stage"
+  ],
+
+"Product":
+  [
+    "Foxden",
+    "Wrench",
+    "SharedOperations",
+    "Eloqua",
+    "Hubspot",
+    "Hubexchange",
+    "Core",
+    "CC",
+    "RTWebsite",
+    "SSBA-Webinar",
+    "RnD",
+    "DanC",
+    "Ubimeet"
+  ]
+}
