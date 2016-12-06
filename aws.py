@@ -25,7 +25,7 @@ class AWS(object):
         """
         return (boto.ec2.connect_to_region(self.region,
                  aws_access_key_id = 'xxxxxxxxxx',
-                 aws_secret_access_key = 'xxxxxxxxx'))
+                 aws_secret_access_key = 'xxxxxxxxxxx'))
 
 """ Helper functions """
 def check_data(item, values):
