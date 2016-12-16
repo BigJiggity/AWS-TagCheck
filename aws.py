@@ -32,8 +32,8 @@ class AWS(object):
         key id/secret is for aws account aws_srvc,this is a service account that doesn't have a login/password
         and is used exclusively for execution of this script to retrieve instance tag data.
         """
-        return(boto.ec2.connect_to_region(self.region, aws_access_key_id='AKIAJ5K6LOIYEIGZCRSQ',
-                                          aws_secret_access_key='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'))
+        return(boto.ec2.connect_to_region(self.region, aws_access_key_id='',
+                                          aws_secret_access_key=''))
 
 
 def check_data(item, values):
