@@ -3,24 +3,16 @@ and compare them against canonical lists to ensure environmental consistency,
 and report any deviations to the appropriate parties.
 ------------------------------------------------------------------------------------
  Author(s): John Reed, Nick Bitzer
- Python Version: 2.7.x
 
-To execute script, initialize the python virtualenv by entering "source virtShell.sh",
-Then execute the script "./aws_tag_check.py"
+To execute script, initialize the python virtualenv by entering "source virtShell.sh", Then execute the script "./aws_tag_check.py"
 
-Script outputs tables to tagcheck.html, this is publish to a vhost on an aws instance,
-and uses jenkins to excute the script daily, that overwrites the previous file, only if
-a change is detected.
+the script outputs the missing or incorrect EC2 tag data into html tables in index.html, this is published to ec2-54-175-234-75.compute-1.amazonaws.com (aws instance running apache2, vhost is tagcheck.conf).
+A Jenkins job runs the script daily at 6am, that overwrites the previous file, if a change in data is detected.
 
-If you have created a new environment or product line, These tag values will need to be added to canonical.json so the script will not report your new instances as containing bad tags/values.
+If you have created a new environment or product line that differ from the connonical list, please see Seth Annibel to have that product/environment cannonical list updated.
 
 TODO:
 # - add credential pass/fail
 # - We should put in a check or something to make sure we're using the right account when running
-#   prod account id: 703930589584
-#   ecovate-ops id: 55050925507 maybe use a --test flag to switch to ops account.
-# - 	Turn on debug with --debug flag
 # - Prevent Table headers from printing if no bad data exists in a region
-
-
 More to come...
